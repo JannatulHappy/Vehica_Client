@@ -1,0 +1,267 @@
+ [
+  {
+    "id": 1,
+    "image": "https://example.com/image1.jpg",
+    "name": "Product 1",
+    "brandName": "Toyota",
+    "type": "SUV",
+    "price": 45000,
+    "shortDescription": "A versatile SUV designed for family adventures.",
+    "longDescription": "The Toyota SUV is a versatile vehicle designed to accommodate family adventures. With spacious seating and ample cargo space, it's perfect for road trips and outdoor activities. Whether you're navigating city streets or exploring scenic routes, this SUV ensures a comfortable and enjoyable ride for the whole family.",
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "image": "https://example.com/image2.jpg",
+    "name": "Product 2",
+    "brandName": "Toyota",
+    "type": "Sedan",
+    "price": 35000,
+    "shortDescription": "A fuel-efficient sedan with a sleek design.",
+    "longDescription": "The Toyota sedan is a fuel-efficient vehicle with a sleek and modern design. It's an ideal choice for daily commuting and city driving. With its advanced features and comfortable interior, this sedan offers a delightful driving experience while saving on fuel costs.",
+    "rating": 4.6
+  },
+  {
+    "id": 3,
+    "image": "https://example.com/image3.jpg",
+    "name": "Product 3",
+    "brandName": "Toyota",
+    "type": "Electric SUV",
+    "price": 60000,
+    "shortDescription": "An eco-friendly electric SUV with advanced technology.",
+    "longDescription": "The Toyota electric SUV is an eco-friendly vehicle powered by electricity. It features advanced technology and offers a quiet and smooth ride. With zero emissions, it's a responsible choice for environmentally-conscious drivers who also enjoy cutting-edge features.",
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "image": "https://example.com/image4.jpg",
+    "name": "Product 4",
+    "brandName": "Toyota",
+    "type": "Compact Car",
+    "price": 30000,
+    "shortDescription": "A compact car with excellent maneuverability.",
+    "longDescription": "The Toyota compact car is known for its excellent maneuverability and efficient use of space. Its compact size makes it easy to navigate through traffic and park in tight spaces. Don't be fooled by its size; it offers a comfortable and enjoyable driving experience for urban and suburban adventures.",
+    "rating": 4.5
+  },
+  {
+    "id": 5,
+    "image": "https://example.com/image5.jpg",
+    "name": "Product 5",
+    "brandName": "Toyota",
+    "type": "Hybrid Sedan",
+    "price": 38000,
+    "shortDescription": "A hybrid sedan that combines fuel efficiency and style.",
+    "longDescription": "The Toyota hybrid sedan is a perfect combination of fuel efficiency and style. It offers a hybrid powertrain, which means you can save on fuel while enjoying a stylish and comfortable ride. This sedan represents the future of automotive technology.",
+    "rating": 4.7
+  },
+  {
+    "id": 6,
+    "image": "https://example.com/image6.jpg",
+    "name": "Product 6",
+    "brandName": "Toyota",
+    "type": "Sports Car",
+    "price": 50000,
+    "shortDescription": "A sports car that delivers high performance.",
+    "longDescription": "The Toyota sports car is designed for high performance and speed enthusiasts. With a powerful engine and aerodynamic design, it offers an exhilarating driving experience. Get ready to hit the open road with style and speed in this remarkable sports car.",
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "image": "https://example.com/image7.jpg",
+    "name": "Product 7",
+    "brandName": "Ford",
+    "type": "SUV",
+    "price": 48000,
+    "shortDescription": "A family-friendly SUV built for adventures.",
+    "longDescription": "The Ford SUV is a family-friendly vehicle built to accommodate adventures of all kinds. With a spacious interior and advanced safety features, it ensures a secure and comfortable ride for families. Whether you're going on a road trip or tackling off-road trails, this SUV is up for the challenge.",
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "image": "https://example.com/image8.jpg",
+    "name": "Product 8",
+    "brandName": "Ford",
+    "type": "Truck",
+    "price": 55000,
+    "shortDescription": "A powerful truck designed for work and play.",
+    "longDescription": "The Ford truck is a powerful vehicle designed for both work and play. With a rugged design and robust performance, it's ready to tackle tough jobs and outdoor adventures. This truck is built for those who demand strength and versatility in their vehicles.",
+    "rating": 4.8
+  },
+  {
+    "id": 9,
+    "image": "https://example.com/image9.jpg",
+    "name": "Product 9",
+    "brandName": "Ford",
+    "type": "Electric SUV",
+    "price": 65000,
+    "shortDescription": "An electric SUV with zero emissions.",
+    "longDescription": "The Ford electric SUV is an environmentally-friendly vehicle with zero emissions. It offers advanced technology and a spacious interior. With this electric SUV, you can enjoy a quiet and smooth ride while contributing to a cleaner environment.",
+    "rating": 4.8
+  },
+  {
+    "id": 10,
+    "image": "https://example.com/image10.jpg",
+    "name": "Product 10",
+    "brandName": "Ford",
+    "type": "Sedan",
+    "price": 42000,
+    "shortDescription": "A comfortable and stylish sedan for daily commuting.",
+    "longDescription": "The Ford sedan is a comfortable and stylish choice for daily commuting and city driving. With its modern design and advanced features, it provides a pleasant driving experience. Whether you're navigating city streets or cruising on the highway, this sedan offers a smooth and enjoyable ride.",
+    "rating": 4.6
+  },
+  {
+    "id": 11,
+    "image": "https://example.com/image11.jpg",
+    "name": "Product 11",
+    "brandName": "Ford",
+    "type": "Compact Car",
+    "price": 38000,
+    "shortDescription": "A compact car that's easy to maneuver.",
+    "longDescription": "The Ford compact car is known for its ease of maneuverability and efficient use of space. Its compact size makes it perfect for city driving and parking in tight spots. Despite its size, it offers a comfortable and enjoyable driving experience for both new and experienced drivers.",
+    "rating": 4.5
+  },
+  {
+    "id": 12,
+    "image": "https://example.com/image12.jpg",
+    "name": "Product 12",
+    "brandName": "Audi",
+    "type": "Luxury SUV",
+    "price": 75000,
+    "shortDescription": "A luxurious and spacious SUV for discerning drivers.",
+    "longDescription": "The Audi luxury SUV is the epitome of luxury and space for discerning drivers. With a spacious and opulent interior, advanced technology, and a powerful engine, it offers a driving experience like no other. Whether you're heading on a family adventure or a solo journey, the Audi luxury SUV takes you there in style and comfort.",
+    "rating": 4.9
+  },
+  {
+    "id": 13,
+    "image": "https://example.com/image13.jpg",
+    "name": "Product 13",
+    "brandName": "Audi",
+    "type": "Compact Car",
+    "price": 45000,
+    "shortDescription": "An elegant and efficient compact car.",
+    "longDescription": "The Audi compact car is the epitome of elegance and efficiency. With a sleek design and an interior that redefines comfort, it delivers an upscale driving experience. Experience the perfect blend of style and performance with the Audi compact car.",
+    "rating": 4.7
+  },
+  {
+    "id": 14,
+    "image": "https://example.com/image14.jpg",
+    "name": "Product 14",
+    "brandName": "Audi",
+    "type": "Sports Car",
+    "price": 75000,
+    "shortDescription": "A high-performance sports car with precision engineering.",
+    "longDescription": "The Audi sports car is the embodiment of high-performance and precision engineering. With a powerful engine and agile handling, it offers an exhilarating driving experience. Every curve and contour is meticulously designed for performance and style. Get ready to command the road with the Audi sports car.",
+    "rating": 4.9
+  },
+  {
+    "id": 15,
+    "image": "https://example.com/image15.jpg",
+    "name": "Product 15",
+    "brandName": "Audi",
+    "type": "Electric SUV",
+    "price": 72000,
+    "shortDescription": "An electric SUV that redefines eco-conscious luxury.",
+    "longDescription": "The Audi electric SUV redefines eco-conscious luxury. With an electric powertrain and advanced tech features, it represents the future of sustainable driving. Its stylish design and cutting-edge technology make a powerful statement. Prepare to experience luxury, efficiency, and innovation with the Audi electric SUV.",
+    "rating": 4.9
+  },
+  {
+    "id": 16,
+    "image": "https://example.com/image16.jpg",
+    "name": "Product 16",
+    "brandName": "Audi",
+    "type": "Sedan",
+    "price": 68000,
+    "shortDescription": "An opulent sedan for the modern executive.",
+    "longDescription": "The Audi sedan is an opulent choice for modern executives. With its refined interior and advanced features, it offers a sophisticated driving experience. Whether you're headed to the office or a night on the town, this sedan ensures you arrive in style and comfort.",
+    "rating": 4.8
+  },
+  {
+    "id": 17,
+    "image": "https://example.com/image17.jpg",
+    "name": "Product 17",
+    "brandName": "BMW",
+    "type": "Luxury Sedan",
+    "price": 70000,
+    "shortDescription": "A luxury sedan that defines prestige.",
+    "longDescription": "The BMW luxury sedan defines prestige with its luxurious interior and cutting-edge technology. It offers a smooth and powerful ride, combining elegance and performance. This sedan is for those who seek the highest standard of quality and luxury in their driving experience.",
+    "rating": 4.9
+  },
+  {
+    "id": 18,
+    "image": "https://example.com/image18.jpg",
+    "name": "Product 18",
+    "brandName": "BMW",
+    "type": "Sports Car",
+    "price": 85000,
+    "shortDescription": "A sports car engineered for speed and excitement.",
+    "longDescription": "The BMW sports car is engineered for speed and excitement. With its powerful engine and sporty design, it delivers an adrenaline-pumping driving experience. Every detail, from the aerodynamics to the interior, is meticulously designed for performance and thrill. Get behind the wheel and experience the heart-pounding journey of the BMW sports car.",
+    "rating": 4.9
+  },
+  {
+    "id": 19,
+    "image": "https://example.com/image19.jpg",
+    "name": "Product 19",
+    "brandName": "BMW",
+    "type": "Electric SUV",
+    "price": 72000,
+    "shortDescription": "An electric SUV that combines eco-friendliness and style.",
+    "longDescription": "The BMW electric SUV combines eco-friendliness and style with its electric powertrain and chic design. It's equipped with advanced technology and a spacious interior. This SUV offers a sustainable and luxurious driving experience that caters to the needs of the modern driver.",
+    "rating": 4.8
+  },
+  {
+    "id": 20,
+    "image": "https://example.com/image20.jpg",
+    "name": "Product 20",
+    "brandName": "BMW",
+    "type": "Compact Car",
+    "price": 58000,
+    "shortDescription": "A compact car that offers efficiency and sophistication.",
+    "longDescription": "The BMW compact car offers a perfect blend of efficiency and sophistication. Its compact size is ideal for city driving, and it's filled with advanced features. Experience the elegance and performance that this compact car brings to every journey.",
+    "rating": 4.7
+  },
+  {
+    "id": 21,
+    "image": "https://example.com/image21.jpg",
+    "name": "Product 21",
+    "brandName": "BMW",
+    "type": "Hybrid SUV",
+    "price": 67000,
+    "shortDescription": "A hybrid SUV that embraces efficiency and luxury.",
+    "longDescription": "The BMW hybrid SUV is the perfect fusion of efficiency and luxury. It offers a hybrid powertrain that's environmentally conscious while providing an opulent driving experience. With its elegant design and advanced technology, this hybrid SUV is the future of upscale driving.",
+    "rating": 4.8
+  },
+  {
+    "id": 22,
+    "image": "https://example.com/image22.jpg",
+    "name": "Product 22",
+    "brandName": "Mercedes-Benz",
+    "type": "Luxury SUV",
+    "price": 78000,
+    "shortDescription": "A luxury SUV that elevates your travel experience.",
+    "longDescription": "The Mercedes-Benz luxury SUV elevates your travel experience with its lavish interior and state-of-the-art features. It offers a smooth and potent ride, merging luxury and performance. For those who seek the pinnacle of opulence and quality in their driving experience, this luxury SUV delivers.",
+    "rating": 4.9
+  },
+  {
+    "id": 23,
+    "image": "https://example.com/image23.jpg",
+    "name": "Product 23",
+    "brandName": "Mercedes-Benz",
+    "type": "Sedan",
+    "price": 72000,
+    "shortDescription": "An elegant sedan that exudes class and charm.",
+    "longDescription": "The Mercedes-Benz sedan exudes class and charm with its refined interior and advanced technology. It offers an elegant and powerful drive that combines style and performance. When you choose this sedan, you choose sophistication and excellence on the road.",
+    "rating": 4.8
+  },
+  {
+    "id": 24,
+    "image": "https://example.com/image24.jpg",
+    "name": "Product 24",
+    "brandName": "Mercedes-Benz",
+    "type": "Electric Car",
+    "price": 70000,
+    "shortDescription": "An electric car that defines the future of driving.",
+    "longDescription": "The Mercedes-Benz electric car defines the future of driving with its electric powertrain and innovative technology. It's a car that's not only eco-friendly but also offers a luxurious experience. Take a ride into the future with the Mercedes-Benz electric car.",
+    "rating": 4.8
+  }
+ 
+]
