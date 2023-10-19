@@ -5,11 +5,11 @@ import Banner from '../../components/Banner/Banner';
 
 const Home = () => {
     const products = useLoaderData();
-    console.log(products)
+   
     return (
         <div>
             <Banner></Banner>
-           <Brands></Brands>
+           <Brands products={products}></Brands>
         </div>
     );
 };
