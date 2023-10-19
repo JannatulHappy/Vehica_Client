@@ -5,12 +5,12 @@ export default {
     extend: {
       fontFamily: {
         mulish: "'Mulish', sans-serif", // Adds a new `font-display` class
-      
       },
       colors: {
-        blue01: "#08133a",
-        blue02: "#108aee",
-        blue03: "#091f4c",
+        orange: "#ff4605",
+        black01:"#000",
+        black02: "#0f141e",
+       black03: "#222732",
       },
     },
   },
