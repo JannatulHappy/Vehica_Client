@@ -38,10 +38,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-         
-          fetch(
-            `http://localhost:5005/api/products/myCart/${params.email}`
-          ),
+          fetch(`http://localhost:5005/api/products/myCart/${params.email}`),
       },
       {
         path: "/brandProducts",
@@ -70,11 +67,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/api/products/:brandName",
-        element: (
-          <PrivateRoute>
-            <BrandProducts />
-          </PrivateRoute>
-        ),
+        element: <BrandProducts />,
         loader: ({ params }) =>
           fetch(`http://localhost:5005/api/products/${params.brandName}`),
       },
