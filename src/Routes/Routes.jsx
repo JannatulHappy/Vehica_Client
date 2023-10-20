@@ -14,66 +14,86 @@ import UpdateProduct from "../Pages/UpdateProduct/UpdateProduct";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Home></Home>,
-        loader: () => fetch("/fakedata.json"),
+        element: <Home />,
+        loader: () => fetch(`http://localhost:5005/api/products`),
       },
-
       {
         path: "/addProduct",
-        element: <AddProduct></AddProduct>,
-        loader: () => fetch("/fakeData.json"),
+        element: (
+          <PrivateRoute>
+            <AddProduct />
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
       },
       {
         path: "/myCart",
         element: (
           <PrivateRoute>
-            <MyCart></MyCart>
+            <MyCart />
           </PrivateRoute>
         ),
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
       },
       {
         path: "/brandProducts",
         element: (
           <PrivateRoute>
-            <BrandProducts></BrandProducts>
+            <BrandProducts />
           </PrivateRoute>
         ),
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
       },
       {
-        path: "/productDetail/:id",
+        path: "/api/singleProduct/:id",
         element: (
           <PrivateRoute>
-            <ProductDetail></ProductDetail>
+            <ProductDetail />
           </PrivateRoute>
         ),
-        loader: () => fetch("/fakeData.json"),
+        loader: ({ params }) => {
+          console.log(params, "id of single");
+          return fetch(`http://localhost:5005/api/singleProduct/${params.id}`);
+        },
       },
       {
-        path: "/UpdateProduct/:id",
+        path: "/updateProduct/:id",
         element: (
           <PrivateRoute>
-          <UpdateProduct></UpdateProduct>
+            <UpdateProduct />
           </PrivateRoute>
         ),
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
+      },
+      {
+        path: "/api/products/:brandName",
+        element: (
+          <PrivateRoute>
+            <BrandProducts />
+          </PrivateRoute>
+        ),
+        loader: ({ params }) => {
+          return fetch(
+            `http://localhost:5005/api/products/${params.brandName}`
+          );
+        },
       },
       {
         path: "/login",
-        element: <Login></Login>,
+        element: <Login />,
       },
       {
         path: "/register",
-        element: <Register></Register>,
+        element: <Register />,
       },
     ],
   },
 ]);
 
 export default router;
+

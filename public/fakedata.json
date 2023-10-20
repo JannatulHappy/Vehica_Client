@@ -1,11 +1,10 @@
 [
   {
-    "id": 1,
     "name": "BMW M3",
     "brandName": "BMW",
     "carModelName": "M3",
     "type": "Sedan",
-    "brand_Img":"https://i.ibb.co/bz9Hj00/bmw-logo.jpg",
+    "brand_Img": "https://i.ibb.co/bz9Hj00/bmw-logo.jpg",
     "priceInDollars": 60000,
     "shortDescription": "Luxury Sedan",
     "longDescription": "The BMW M3 is a high-performance sedan with a powerful engine and elegant design. It offers a perfect blend of style and performance. The M3 is designed for those who seek the thrill of driving with top-notch comfort and luxury. With its precision engineering, the BMW M3 is a true icon in the world of sports sedans.",
@@ -13,7 +12,6 @@
     "image": "https://i.ibb.co/Wn98zt5/img02.jpg"
   },
   {
-    "id": 2,
     "name": "BMW X5",
     "brandName": "BMW",
     "carModelName": "X5",
@@ -26,7 +24,6 @@
     "image": "https://i.ibb.co/QrR3gS6/img03.jpg"
   },
   {
-    "id": 3,
     "name": "BMW 3 Series",
     "brandName": "BMW",
     "carModelName": "3 Series",
@@ -39,7 +36,6 @@
     "image": "https://i.ibb.co/1dQv4B4/img04.jpg"
   },
   {
-    "id": 4,
     "name": "BMW i8",
     "brandName": "BMW",
     "carModelName": "i8",
@@ -49,10 +45,9 @@
     "shortDescription": "Hybrid Sports Car",
     "longDescription": "The BMW i8 is a futuristic sports car with a powerful hybrid engine. It represents the future of automotive engineering with its innovative technology and stunning design. The i8 offers breathtaking acceleration and exceptional fuel efficiency, making it a true icon in the world of hybrid sports cars.",
     "rating": 4.9,
-    "image":"https://i.ibb.co/ySF3khp/img05.jpg"
+    "image": "https://i.ibb.co/ySF3khp/img05.jpg"
   },
   {
-    "id": 5,
     "name": "BMW X3",
     "brandName": "BMW",
     "carModelName": "X3",
@@ -65,7 +60,6 @@
     "image": "https://i.ibb.co/KbkH5jC/img06.jpg"
   },
   {
-    "id": 6,
     "name": "BMW 5 Series",
     "brandName": "BMW",
     "carModelName": "5 Series",
@@ -78,7 +72,6 @@
     "image": "https://i.ibb.co/S7F0jrc/img01.jpg"
   },
   {
-    "id": 7,
     "name": "Audi A4",
     "brandName": "Audi",
     "carModelName": "A4",
@@ -91,7 +84,6 @@
     "image": "https://i.ibb.co/5sBVVxH/img07.jpg"
   },
   {
-    "id": 8,
     "name": "Audi Q5",
     "brandName": "Audi",
     "carModelName": "Q5",
@@ -104,7 +96,6 @@
     "image": "https://i.ibb.co/dKvvYqZ/img08.jpg"
   },
   {
-    "id": 9,
     "name": "Audi S3",
     "brandName": "Audi",
     "carModelName": "S3",
@@ -114,10 +105,9 @@
     "shortDescription": "Sporty Sedan",
     "longDescription": "The Audi S3 is a sporty sedan with impressive performance and features. It delivers a thrilling driving experience with its powerful engine and agile handling. The S3 is designed for those who crave excitement on the road.",
     "rating": 4.9,
-    "image": "https://i.ibb.co/2WCtxbr/img09.jpg" 
+    "image": "https://i.ibb.co/2WCtxbr/img09.jpg"
   },
   {
-    "id": 10,
     "name": "Audi A6",
     "brandName": "Audi",
     "carModelName": "A6",
@@ -127,10 +117,9 @@
     "shortDescription": "Luxury Sedan",
     "longDescription": "The Audi A6 offers a blend of luxury, technology, and performance. It provides a spacious and elegant interior with advanced features. The A6 is the perfect choice for those who demand both style and substance in a sedan.",
     "rating": 4.8,
-    "image": "https://i.ibb.co/yd9tnYt/img10.jpg" 
+    "image": "https://i.ibb.co/yd9tnYt/img10.jpg"
   },
   {
-    "id": 11,
     "name": "Audi TT",
     "brandName": "Audi",
     "carModelName": "TT",
@@ -143,7 +132,6 @@
     "image": "https://i.ibb.co/WpRkkZx/img12.jpg"
   },
   {
-    "id": 12,
     "name": "Audi Q7",
     "brandName": "Audi",
     "carModelName": "Q7",
@@ -153,10 +141,9 @@
     "shortDescription": "Premium SUV",
     "longDescription": "The Audi Q7 offers a premium SUV experience with advanced features and luxurious comfort. It provides a spacious and well-appointed interior for both passengers and cargo. Whether you're on a family trip or an adventure, the Q7 ensures a premium journey.",
     "rating": 4.7,
-    "image": "https://i.ibb.co/f1X83RC/img11.jpg" 
+    "image": "https://i.ibb.co/f1X83RC/img11.jpg"
   },
   {
-    "id": 13,
     "name": "Mercedes-Benz C-Class",
     "brandName": "Mercedes-Benz",
     "carModelName": "C-Class",
@@ -169,7 +156,6 @@
     "image": "https://i.ibb.co/dKZqXP8/img13.jpg"
   },
   {
-    "id": 14,
     "name": "Mercedes-Benz GLE",
     "brandName": "Mercedes-Benz",
     "carModelName": "GLE",
@@ -182,7 +168,6 @@
     "image": "https://i.ibb.co/h7Rdjt4/img15.jpg"
   },
   {
-    "id": 15,
     "name": "Mercedes-Benz E-Class",
     "brandName": "Mercedes-Benz",
     "carModelName": "E-Class",
@@ -195,7 +180,6 @@
     "image": "https://i.ibb.co/dKZqXP8/img13.jpg"
   },
   {
-    "id": 16,
     "name": "Mercedes-Benz S-Class",
     "brandName": "Mercedes-Benz",
     "carModelName": "S-Class",
@@ -208,7 +192,6 @@
     "image": "https://i.ibb.co/tQjtfTz/img17.jpg"
   },
   {
-    "id": 17,
     "name": "Mercedes-Benz GLC",
     "brandName": "Mercedes-Benz",
     "carModelName": "GLC",
@@ -221,7 +204,6 @@
     "image": "https://i.ibb.co/QKvv5vG/carousel-4.jpg"
   },
   {
-    "id": 18,
     "name": "Mercedes-Benz AMG GT",
     "brandName": "Mercedes-Benz",
     "carModelName": "AMG GT",
@@ -234,7 +216,6 @@
     "image": "https://i.ibb.co/19DsJHk/carousel-3.jpg"
   },
   {
-    "id": 19,
     "name": "Acura TLX",
     "brandName": "Acura",
     "carModelName": "TLX",
@@ -244,10 +225,9 @@
     "shortDescription": "Premium Sedan",
     "longDescription": "The Acura TLX is a premium sedan known for its combination of luxury and sportiness. With its elegant design and advanced technology, the TLX offers a comfortable and exciting driving experience. It's designed for those who appreciate style and performance.",
     "rating": 4.7,
-    "image": "https://i.ibb.co/1r4g3kx/carousel-1.jpg" 
+    "image": "https://i.ibb.co/1r4g3kx/carousel-1.jpg"
   },
   {
-    "id": 20,
     "name": "Acura RDX",
     "brandName": "Acura",
     "carModelName": "RDX",
@@ -260,7 +240,6 @@
     "image": "https://i.ibb.co/S7F0jrc/img01.jpg"
   },
   {
-    "id": 21,
     "name": "Acura NSX",
     "brandName": "Acura",
     "carModelName": "NSX",
@@ -273,7 +252,6 @@
     "image": "https://i.ibb.co/Wn98zt5/img02.jpg"
   },
   {
-    "id": 22,
     "name": "Acura MDX",
     "brandName": "Acura",
     "carModelName": "MDX",
@@ -286,7 +264,6 @@
     "image": "https://i.ibb.co/QrR3gS6/img03.jpg"
   },
   {
-    "id": 23,
     "name": "Acura ILX",
     "brandName": "Acura",
     "carModelName": "ILX",
@@ -299,7 +276,6 @@
     "image": "https://i.ibb.co/1dQv4B4/img04.jpg"
   },
   {
-    "id": 24,
     "name": "Acura RLX",
     "brandName": "Acura",
     "carModelName": "RLX",
@@ -312,7 +288,6 @@
     "image": "https://i.ibb.co/ySF3khp/img05.jpg"
   },
   {
-    "id": 25,
     "name": "Ford Mustang",
     "brandName": "Ford",
     "carModelName": "Mustang",
@@ -325,7 +300,6 @@
     "image": "https://i.ibb.co/KbkH5jC/img06.jpg"
   },
   {
-    "id": 26,
     "name": "Ford Explorer",
     "brandName": "Ford",
     "carModelName": "Explorer",
@@ -338,7 +312,6 @@
     "image": "https://i.ibb.co/5sBVVxH/img07.jpg"
   },
   {
-    "id": 27,
     "name": "Ford F-150",
     "brandName": "Ford",
     "carModelName": "F-150",
@@ -351,7 +324,6 @@
     "image": "https://i.ibb.co/2WCtxbr/img09.jpg"
   },
   {
-    "id": 28,
     "name": "Ford Escape",
     "brandName": "Ford",
     "carModelName": "Escape",
@@ -364,7 +336,6 @@
     "image": "https://i.ibb.co/f1X83RC/img11.jpg"
   },
   {
-    "id": 29,
     "name": "Ford Focus",
     "brandName": "Ford",
     "carModelName": "Focus",
@@ -377,7 +348,6 @@
     "image": "https://i.ibb.co/dKZqXP8/img13.jpg"
   },
   {
-    "id": 30,
     "name": "Ford Fusion",
     "brandName": "Ford",
     "carModelName": "Fusion",
@@ -390,7 +360,6 @@
     "image": "https://i.ibb.co/dKZqXP8/img13.jpg"
   },
   {
-    "id": 31,
     "name": "Honda Accord",
     "brandName": "Honda",
     "carModelName": "Accord",
@@ -403,7 +372,6 @@
     "image": "https://i.ibb.co/h7Rdjt4/img15.jpg"
   },
   {
-    "id": 32,
     "name": "Honda CR-V",
     "brandName": "Honda",
     "carModelName": "CR-V",
@@ -416,7 +384,6 @@
     "image": "https://i.ibb.co/tQjtfTz/img17.jpg"
   },
   {
-    "id": 33,
     "name": "Honda Civic",
     "brandName": "Honda",
     "carModelName": "Civic",
@@ -429,7 +396,6 @@
     "image": "https://i.ibb.co/QKvv5vG/carousel-4.jpg"
   },
   {
-    "id": 34,
     "name": "Honda Pilot",
     "brandName": "Honda",
     "carModelName": "Pilot",
@@ -442,7 +408,6 @@
     "image": "https://i.ibb.co/19DsJHk/carousel-3.jpg"
   },
   {
-    "id": 35,
     "name": "Honda Fit",
     "brandName": "Honda",
     "carModelName": "Fit",
@@ -455,7 +420,6 @@
     "image": "https://i.ibb.co/1r4g3kx/carousel-1.jpg"
   },
   {
-    "id": 36,
     "name": "Honda Odyssey",
     "brandName": "Honda",
     "brand_Img": "https://i.ibb.co/nLTpbP1/honda-logo02.jpg",

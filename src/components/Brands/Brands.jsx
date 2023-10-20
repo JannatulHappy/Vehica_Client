@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Brands = ({ products }) => {
   // Create a Set to store unique brand names
@@ -13,12 +14,21 @@ const Brands = ({ products }) => {
       uniqueBrands.add(product.brandName);
 
       // Create a card for the brand
-      const brandCard = (
-        <div  key={product.id} className=" brand-card" onClick={handleBrand}>
-          <img className="h-32 w-60" src={product.brand_Img} alt={product.brandName} />
-          <p>{product.brandName}</p>
-        </div>
-      );
+        const brandCard = (
+          <Link
+            to={`/api/products/${product.brandName}`}
+            key={product.id}
+            className=" brand-card"
+            onClick={handleBrand}
+          >
+            <img
+              className="h-32 w-60"
+              src={product.brand_Img}
+              alt={product.brandName}
+            />
+            <p>{product.brandName}</p>
+          </Link>
+        );
 
       brandCards.push(brandCard);
     }
