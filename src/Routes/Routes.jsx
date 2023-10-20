@@ -31,20 +31,21 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/myCart",
+        path: "/api/products/myCart",
         element: (
           <PrivateRoute>
             <MyCart />
           </PrivateRoute>
         ),
+        loader: ({ params }) =>
+         
+          fetch(
+            `http://localhost:5005/api/products/myCart/${params.email}`
+          ),
       },
       {
         path: "/brandProducts",
-        element: 
-         
-            <BrandProducts />
-          
-        ,
+        element: <BrandProducts />,
       },
       {
         path: "/api/singleProduct/:id",

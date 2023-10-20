@@ -23,23 +23,49 @@ function Header() {
         tabIndex={0}
         className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52"
       >
-        <li>
-          <a>Item 1</a>
+        <li className="block hover:text-orange ">
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "flex items-center "
+                : isActive
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
+                : ""
+            }
+          >
+            Home
+          </NavLink>
         </li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li>
-              <a>Submenu 1</a>
-            </li>
-            <li>
-              <a>Submenu 2</a>
-            </li>
-          </ul>
+        <li className="block hover:text-orange ">
+          <NavLink
+            to="/addProduct"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "flex items-center "
+                : isActive
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
+                : ""
+            }
+          >
+            Add Product
+          </NavLink>
         </li>
-        <li>
-          <a>Item 3</a>
+        <li className="block hover:text-orange ">
+          <NavLink
+            to="/Route3"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "flex items-center "
+                : isActive
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
+                : ""
+            }
+          >
+            Route3
+          </NavLink>
         </li>
+        
       </ul>
     </>
   );
@@ -88,6 +114,7 @@ function Header() {
            Route3
           </NavLink>
         </li>
+       
       </ul>
     </>
   );
@@ -124,14 +151,15 @@ function Header() {
         <div className="hidden navbar-center lg:flex">{ul2}</div>
 
         <div className="navbar-end">
-          <div className="hidden md:flex ">
+          <div className="flex ">
             {" "}
-            {/* <img src={user.photoURL} alt="" />
-{user.displayName} */}
             {user ? (
               ""
             ) : (
-              <NavLink to="/register" className="mx-3 btn">
+              <NavLink
+                to="/register"
+                className="px-1 mx-3 sm:mx-5 sm:px-4 sm:mx-1 btn"
+              >
                 Sign up
               </NavLink>
             )}
@@ -164,11 +192,14 @@ function Header() {
                     >
                       <div className="card-body">
                         <span className="text-lg font-bold">8 Items</span>
-                        <span className="text-info">Subtotal: $999</span>
+
                         <div className="card-actions">
-                          <button className="btn btn-primary btn-block">
+                          <Link
+                            to={`/api/products/myCart`}
+                            className="btn btn-primary btn-block"
+                          >
                             View cart
-                          </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -209,7 +240,10 @@ function Header() {
               // <button onClick={handleSignOut} className="btn">
               //   Sign Out
               // </button>
-              <NavLink to="/login" className="btn">
+              <NavLink
+                to="/login"
+                className="px-1 sm:px-4 btn"
+              >
                 Sign in
               </NavLink>
             )}
