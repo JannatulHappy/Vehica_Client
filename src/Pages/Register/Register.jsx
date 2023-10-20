@@ -120,7 +120,7 @@ function Register() {
 
         <button
           type="submit"
-          className="w-full px-4 py-2 text-white rounded-md bg-blue03 "
+          className="w-full px-4 py-2 text-lg font-bold text-black rounded-md bg-orange"
         >
           Register
         </button>
@@ -137,7 +137,7 @@ function Register() {
 
       <p className="my-5 font-semibold text-center">
         Already have an account?
-        <Link to="/login" className="underline text-blue02 hover:underline">
+        <Link to="/login" className="text-black underline hover:underline">
           {" "}
           Please Login
         </Link>

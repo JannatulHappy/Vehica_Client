@@ -77,11 +77,11 @@ function Login() {
             />
           </div>
           <div className="mt-6 form-control">
-            <button className="text-white btn bg-blue03">Login</button>
+            <button className="text-white bg-black btn">Login</button>
           </div>
         </form>
         <button
-          className="text-white bg-blue01 btn"
+          className="text-white bg-black btn"
           onClick={handleGoogleSignIn}
         >
           Google Sign In
@@ -90,7 +90,7 @@ function Login() {
           Don't have an account?
           <Link
             to="/register"
-            className="underline text-blue02 hover:underline"
+            className="text-black underline hover:underline"
           >
             {" "}
             Please Register

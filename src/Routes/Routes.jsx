@@ -40,11 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/brandProducts",
-        element: (
-          <PrivateRoute>
+        element: 
+         
             <BrandProducts />
-          </PrivateRoute>
-        ),
+          
+        ,
       },
       {
         path: "/api/singleProduct/:id",

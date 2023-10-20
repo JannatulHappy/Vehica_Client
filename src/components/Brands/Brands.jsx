@@ -22,11 +22,11 @@ const Brands = ({ products }) => {
             onClick={handleBrand}
           >
             <img
-              className="h-32 w-60"
+              className="rounded-box h-44 w-80"
               src={product.brand_Img}
               alt={product.brandName}
             />
-            <p>{product.brandName}</p>
+            <p className="my-3 ml-3 text-2xl font-semibold">{product.brandName}</p>
           </Link>
         );
 
@@ -35,10 +35,15 @@ const Brands = ({ products }) => {
   });
 
   return (
-    <div className="max-w-[1440px] mx-auto my-20">
+    <div className="max-w-[1440px] px-5 mx-auto my-20">
       <h2 className="text-2xl font-medium my-7 text-orange">Handy picked</h2>
-      <h1 className="mb-20 text-5xl font-extrabold text-white ">Featured Listings</h1>
-      <div className="flex gap-10 brand-cards-container">{brandCards}</div>
+      <h1 className="mb-20 text-5xl font-extrabold text-white ">
+        Featured Listings
+      </h1>
+      <div className="grid pt-10 sm:grid-cols-2 md:gap-10 md:grid-cols-3 lg:grid-cols-6 brand-cards-container">
+        {" "}
+        {brandCards}
+      </div>
     </div>
   );
 };

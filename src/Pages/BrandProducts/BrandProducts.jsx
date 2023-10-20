@@ -11,8 +11,8 @@ const BrandProducts = () => {
   // console.log(productsData);
 
   return (
-    <div >
-      <div className="flex w-9/12 mx-auto overflow-x-auto carousel">
+    <div className="px-5">
+      <div className="flex overflow-x-auto w-9/12mx-auto carousel">
         <div className="w-3/5 carousel-item">
           <img src={carousel01} className="w-full" alt="Carousel Image 1" />
         </div>

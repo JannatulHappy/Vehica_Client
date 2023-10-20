@@ -18,7 +18,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center ">
         <div className="w-full h-screen bg-[url('https://i.ibb.co/r2x0Rx2/banner01.jpg')] bg-cover bg-no-repeat bg-right-bottom">
           <div className="flex items-center justify-center w-full h-full bg-gray-900/50 backdrop-brightness-75">
             <div
@@ -37,7 +37,7 @@ const Banner = () => {
                   models, and find cars for sale.
                 </p>
               </div>
-              <div className="flex items-center gap-10 pt-10">
+              <div className="grid grid-cols-3 pt-10 md:gap-10 md:grid-cols-6">
                 {carCategories.map((category, index) => (
                   <div
                     key={index}
