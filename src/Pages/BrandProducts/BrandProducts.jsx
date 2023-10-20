@@ -8,10 +8,10 @@ import carousel05 from "../../assets/carousel_5.jpg";
 const BrandProducts = () => {
   const productsData = useLoaderData();
 
-  console.log(productsData);
+  // console.log(productsData);
 
   return (
-    <div>
+    <div >
       <div className="flex w-9/12 mx-auto overflow-x-auto carousel">
         <div className="w-3/5 carousel-item">
           <img src={carousel01} className="w-full" alt="Carousel Image 1" />
@@ -29,7 +29,7 @@ const BrandProducts = () => {
       <div className="my-20 grid grid-cols-1 gap-4 mx-auto sm:grid-cols-2 md:grid-cols-3 max-w-[1440px]">
         {productsData?.map((product, index) => (
           <div
-            key={product.id}
+            key={product._id}
             className="overflow-hidden rounded-lg shadow-lg bg-black02"
           >
             <img
@@ -53,10 +53,16 @@ const BrandProducts = () => {
               </p>
             </div>
             <div className="px-6 py-4">
-              <Link to={`/api/singleProduct/${product._id}`} className="px-4 py-2 mr-2 font-bold text-white bg-black rounded-full hover:bg-blue-700">
+              <Link
+                to={`/api/singleProduct/${product._id}`}
+                className="px-4 py-2 mr-2 font-bold text-white bg-black rounded-full hover:bg-blue-700"
+              >
                 Details
               </Link>
-              <Link className="px-4 py-2 font-bold text-white bg-black rounded-full hover:bg-green-700">
+              <Link
+                to={`/api/products/update/${product._id}`}
+                className="px-4 py-2 font-bold text-white bg-black rounded-full hover:bg-green-700"
+              >
                 Update
               </Link>
             </div>

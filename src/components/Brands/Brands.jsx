@@ -6,7 +6,7 @@ const Brands = ({ products }) => {
   const uniqueBrands = new Set();
   const brandCards = [];
     const handleBrand = () => {
-      console.log("click brand");
+    
     };
   // Iterate through the products to filter out duplicate brand names and render cards
   products.forEach((product) => {
@@ -17,7 +17,7 @@ const Brands = ({ products }) => {
         const brandCard = (
           <Link
             to={`/api/products/${product.brandName}`}
-            key={product.id}
+            key={product._id}
             className=" brand-card"
             onClick={handleBrand}
           >

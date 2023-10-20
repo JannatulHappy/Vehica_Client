@@ -29,7 +29,6 @@ const router = createBrowserRouter([
             <AddProduct />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
       },
       {
         path: "/myCart",
@@ -38,7 +37,6 @@ const router = createBrowserRouter([
             <MyCart />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
       },
       {
         path: "/brandProducts",
@@ -47,7 +45,6 @@ const router = createBrowserRouter([
             <BrandProducts />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
       },
       {
         path: "/api/singleProduct/:id",
@@ -56,19 +53,19 @@ const router = createBrowserRouter([
             <ProductDetail />
           </PrivateRoute>
         ),
-        loader: ({ params }) => {
-          console.log(params, "id of single");
-          return fetch(`http://localhost:5005/api/singleProduct/${params.id}`);
-        },
+        loader: ({ params }) =>
+          fetch(`http://localhost:5005/api/singleProduct/${params.id}`),
       },
+
       {
-        path: "/updateProduct/:id",
+        path: "/api/products/update/:id",
         element: (
           <PrivateRoute>
-            <UpdateProduct />
+            <UpdateProduct></UpdateProduct>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://example.com/fakeData.json"), // Replace with the correct URL.
+        loader: ({ params }) =>
+          fetch(`http://localhost:5005/api/singleProduct/${params.id}`),
       },
       {
         path: "/api/products/:brandName",
@@ -77,11 +74,8 @@ const router = createBrowserRouter([
             <BrandProducts />
           </PrivateRoute>
         ),
-        loader: ({ params }) => {
-          return fetch(
-            `http://localhost:5005/api/products/${params.brandName}`
-          );
-        },
+        loader: ({ params }) =>
+          fetch(`http://localhost:5005/api/products/${params.brandName}`),
       },
       {
         path: "/login",
@@ -96,4 +90,3 @@ const router = createBrowserRouter([
 ]);
 
 export default router;
-

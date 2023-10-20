@@ -36,7 +36,7 @@ const AddProductForm = () => {
         body: JSON.stringify(product),
       });
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       if (data.acknowledged) {
         alert("Data posted successfully");
         setProduct(initialProduct);
@@ -46,7 +46,7 @@ const AddProductForm = () => {
     }
   };
   // You can send the 'product' state to your Express.js backend here.
-  console.log(product);
+  
 
   return (
     <div className="p-8 text-white bg-black ">
