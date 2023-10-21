@@ -3,8 +3,13 @@ import React from 'react';
 const Footer = () => {
   return (
     <div>
-      <footer className="px-4 mt-16 bg-black divide-y dark:text-gray-100">
-        <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+      <footer
+        className="px-4 mt-16 bg-black divide-y dark:text-gray-100"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div className="max-w-[1440px] flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
           <div className="lg:w-1/3">
             <a
               rel="noopener noreferrer"

@@ -4,18 +4,16 @@ function Team() {
     <div>
       <div className="container flex justify-center pt-16 mx-auto">
         <div>
-          <p className="pb-3 text-lg font-normal text-center text-gray-500">
-            BUILDING TEAM
-          </p>
-          <h1 className="w-5/6 pb-6 mx-auto text-3xl font-extrabold text-center text-gray-800 xl:text-4xl sm:w-4/6">
+          <p className="pb-6 text-lg font-normal text-center ">BUILDING TEAM</p>
+          <h1 className="w-5/6 mx-auto text-3xl font-extrabold text-center pb-9 xl:text-4xl sm:w-4/6">
             The Talented People Behind the Scenes of the Organization
           </h1>
         </div>
       </div>
-      <div className="w-full px-10 pt-10 bg-gray-100">
-        <div className="container mx-auto">
-          <div className="flex-wrap items-center lg:flex md:flex sm:flex xl:justify-between md:justify-around sm:justify-around lg:justify-around">
-            <div className="relative mt-16 mb-32 xl:w-1/3 sm:w-3/4 md:w-2/5 sm:mb-24 xl:max-w-sm lg:w-2/5">
+      <div className="px-10 pt-10 bg-gray-100 ">
+        <div className=" max-w-[1440px] mx-auto">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="relative mt-16 mb-32 sm:mb-24 ">
               <div className="overflow-hidden bg-white rounded shadow-md">
                 <div className="absolute flex justify-center w-full -mt-20">
                   <div className="w-32 h-32">
@@ -106,7 +104,7 @@ function Team() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-16 mb-32 xl:w-1/3 sm:w-3/4 md:w-2/5 sm:mb-24 xl:max-w-sm lg:w-2/5">
+            <div className="relative mt-16 mb-32 sm:mb-24 ">
               <div className="overflow-hidden bg-white rounded shadow-md">
                 <div className="absolute flex justify-center w-full -mt-20">
                   <div className="w-32 h-32">
@@ -122,7 +120,7 @@ function Team() {
                     Silene Tokyo
                   </div>
                   <p className="text-sm text-center text-gray-800">
-                    Product Design Head
+                    Business Analyst
                   </p>
                   <p className="pt-3 text-base font-normal text-center text-gray-600">
                     The emphasis on innovation and technology in our companies
@@ -197,7 +195,7 @@ function Team() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-16 mb-32 xl:w-1/3 sm:w-3/4 md:w-2/5 sm:mb-24 xl:max-w-sm lg:w-2/5">
+            <div className="relative mt-16 mb-32 sm:mb-24 ">
               <div className="overflow-hidden bg-white rounded shadow-md">
                 <div className="absolute flex justify-center w-full -mt-20">
                   <div className="w-32 h-32">
@@ -288,7 +286,7 @@ function Team() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-16 mb-32 xl:w-1/3 sm:w-3/4 md:w-2/5 sm:mb-24 xl:max-w-sm lg:w-2/5">
+            <div className="relative mt-16 mb-32 sm:mb-24 ">
               <div className="overflow-hidden bg-white rounded shadow-md">
                 <div className="absolute flex justify-center w-full -mt-20">
                   <div className="w-32 h-32">
@@ -304,10 +302,10 @@ function Team() {
                     Dean Jones
                   </div>
                   <p className="text-sm text-center text-gray-800">
-                    Principal Software Engineer
+                    Chief Financial Officer
                   </p>
                   <p className="pt-3 text-base font-normal text-center text-gray-600">
-                    An avid open-source developer who loves to be creative and
+                    A Chief Financial Officer who loves to be creative and
                     inventive. I have 20 years of experience in the field.
                   </p>
                   <div className="flex justify-center w-full pt-5 pb-5">
@@ -378,7 +376,7 @@ function Team() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-16 mb-32 xl:w-1/3 sm:w-3/4 md:w-2/5 sm:mb-24 xl:max-w-sm lg:w-2/5">
+            <div className="relative mt-16 mb-32 sm:mb-24 ">
               <div className="overflow-hidden bg-white rounded shadow-md">
                 <div className="absolute flex justify-center w-full -mt-20">
                   <div className="w-32 h-32">
@@ -394,12 +392,12 @@ function Team() {
                     Rachel Adams
                   </div>
                   <p className="text-sm text-center text-gray-800">
-                    Product Design Head
+                    Executive Assistant
                   </p>
                   <p className="pt-3 text-base font-normal text-center text-gray-600">
-                    Product designer with interests in immersive computing and
-                    XR, political ventures, and emerging technologies. Able to
-                    take ideas and give them a life.
+                    Executive Assistant with interests in immersive computing
+                    and XR, political ventures, and emerging technologies. Able
+                    to take ideas and give them a life.
                   </p>
                   <div className="flex justify-center w-full pt-5 pb-5">
                     <a href="javascript:void(0)" className="mx-5">
@@ -469,7 +467,7 @@ function Team() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-16 mb-32 xl:w-1/3 sm:w-3/4 md:w-2/5 sm:mb-24 xl:max-w-sm lg:w-2/5">
+            <div className="relative mt-16 mb-32 sm:mb-24 ">
               <div className="overflow-hidden bg-white rounded shadow-md">
                 <div className="absolute flex justify-center w-full -mt-20">
                   <div className="w-32 h-32">
@@ -485,12 +483,12 @@ function Team() {
                     Charles Keith
                   </div>
                   <p className="text-sm text-center text-gray-800">
-                    UX Designer
+                    Human Resources Manager
                   </p>
                   <p className="pt-3 text-base font-normal text-center text-gray-600">
-                    A UX designer is the voice of the customer. Our job is to
-                    look beyond the business goals. We don't just experience
-                    user interface but also questions it.
+                    A Human Resources Manager is the voice of the customer. Our
+                    job is to look beyond the business goals. We don't just
+                    experience user interface but also questions it.
                   </p>
                   <div className="flex justify-center w-full pt-5 pb-5">
                     <a href="javascript:void(0)" className="mx-5">

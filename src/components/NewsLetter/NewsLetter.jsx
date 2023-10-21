@@ -4,7 +4,12 @@ export default function Index() {
   return (
     <div>
       <div className="grid px-4 py-8 mx-auto  md:py-12 place-content-center md:px-0 max-w-[1440px]">
-        <div className="justify-start lg:flex lg:gap-28">
+        <div
+          className="justify-start lg:flex lg:gap-28"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div className>
             <h1 className="text-5xl font-bold ">Newsletter</h1>
             <p className="pt-8 md:pt-4">
@@ -24,9 +29,7 @@ export default function Index() {
             </div>
             <p className="pt-4 text-xs text-orange">
               Read our{" "}
-              <u className="underline cursor-pointer">
-                privacy policy
-              </u>
+              <u className="underline cursor-pointer">privacy policy</u>
             </p>
           </div>
           <div className="pt-8 lg:pt-0">

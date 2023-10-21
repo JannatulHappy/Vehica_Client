@@ -6,7 +6,12 @@ function IndexPage() {
         <div className="pt-10 md:pt-40">
           <div className="container mx-auto">
             <div className="flex flex-wrap items-center pb-12">
-              <div className="w-full md:w-1/2 lg:w-2/3 xl:pr-20 md:pr-6">
+              <div
+                className="w-full md:w-1/2 lg:w-2/3 xl:pr-20 md:pr-6"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <div className="py-2 text-color">
                   <h1 className="text-2xl font-black tracking-tighter lg:text-5xl md:leading-snug f-f-l">
                     Boost adoption of product and services
@@ -39,7 +44,12 @@ function IndexPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative flex items-end justify-center w-full lg:w-1/3 md:w-1/2 h-80">
+              <div
+                className="relative flex items-end justify-center w-full lg:w-1/3 md:w-1/2 h-80"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <img
                   className="absolute inset-0 object-cover object-center w-full h-full rounded-md"
                   src="https://cdn.tuk.dev/assets/templates/prodify/ProductAdoption.png"
@@ -119,7 +129,12 @@ function IndexPage() {
         <div className="pt-16 pb-32">
           <div className="mx-auto">
             <div className="flex flex-row-reverse flex-wrap items-center">
-              <div className="w-full pl-0 md:w-1/2 lg:w-2/3 lg:pl-20 md:pl-10 sm:pl-0">
+              <div
+                className="w-full pl-0 md:w-1/2 lg:w-2/3 lg:pl-20 md:pl-10 sm:pl-0"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <div className="py-2 text-color">
                   <h1 className="text-2xl font-black tracking-tighter lg:text-4xl md:leading-snug f-f-l">
                     Easily manage sales through our invoicing system
@@ -152,7 +167,12 @@ function IndexPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative flex items-end justify-center w-full lg:w-1/3 md:w-1/2 h-96">
+              <div
+                className="relative flex items-end justify-center w-full lg:w-1/3 md:w-1/2 h-96"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <img
                   className="absolute inset-0 object-cover object-center w-full h-full rounded-md"
                   src="https://cdn.tuk.dev/assets/templates/prodify/invoicing-system.png"

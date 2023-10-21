@@ -18,7 +18,10 @@ const Brands = ({ products }) => {
           <Link
             to={`/api/products/${product.brandName}`}
             key={product._id}
-            className=" rounded-box bg-black02 brand-card"
+            className=" rounded-box bg-black02 brand-card transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             onClick={handleBrand}
           >
             <img
@@ -27,9 +30,7 @@ const Brands = ({ products }) => {
               alt={product.brandName}
             />
             <div className="flex items-center justify-between px-4 mt-4">
-              <p className="text-xl font-semibold ">
-                {product.brandName}
-              </p>
+              <p className="text-xl font-semibold ">{product.brandName}</p>
               <p className="px-3 py-1 font-medium rounded-lg bg-orange">2022</p>
             </div>
           </Link>
@@ -40,7 +41,12 @@ const Brands = ({ products }) => {
   });
 
   return (
-    <div className="max-w-[1440px] px-5 mx-auto my-20">
+    <div
+      className="max-w-[1440px] px-5 mx-auto my-20"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <h2 className="text-2xl font-medium my-7 text-orange">Handy picked</h2>
       <h1 className="mb-20 text-5xl font-extrabold text-white ">
         Brand We Worked With

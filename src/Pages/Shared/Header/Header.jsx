@@ -28,10 +28,10 @@ function Header() {
             to="/"
             className={({ isActive, isPending }) =>
               isPending
-                ? "flex items-center "
+                ? "flex items-center hover:text-orange text-orange"
                 : isActive
-                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
-                : ""
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
+                : "hover:text-orange "
             }
           >
             Home
@@ -42,10 +42,10 @@ function Header() {
             to="/addProduct"
             className={({ isActive, isPending }) =>
               isPending
-                ? "flex items-center "
+                ? "flex items-center hover:text-orange text-orange"
                 : isActive
-                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
-                : ""
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
+                : "hover:text-orange "
             }
           >
             Add Product
@@ -53,16 +53,44 @@ function Header() {
         </li>
         <li className="block hover:text-orange ">
           <NavLink
-            to="/Route3"
+            to="/aboutUs"
             className={({ isActive, isPending }) =>
               isPending
-                ? "flex items-center "
+                ? "flex items-center hover:text-orange text-orange"
                 : isActive
-                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
-                : ""
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
+                : "hover:text-orange "
             }
           >
-            Route3
+            About Us
+          </NavLink>
+        </li>{" "}
+        <li className="block hover:text-orange ">
+          <NavLink
+            to="/team"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "flex items-center hover:text-orange text-orange"
+                : isActive
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
+                : "hover:text-orange "
+            }
+          >
+            Team
+          </NavLink>
+        </li>
+        <li className="block hover:text-orange ">
+          <NavLink
+            to="/faq"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "flex items-center hover:text-orange text-orange"
+                : isActive
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
+                : "hover:text-orange "
+            }
+          >
+            FAQ
           </NavLink>
         </li>
       </ul>
@@ -101,20 +129,6 @@ function Header() {
         </li>
         <li className="block hover:text-orange ">
           <NavLink
-            to="/faq"
-            className={({ isActive, isPending }) =>
-              isPending
-                ? "flex items-center hover:text-orange text-orange"
-                : isActive
-                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
-                : "hover:text-orange "
-            }
-          >
-            FAQ
-          </NavLink>
-        </li>
-        <li className="block hover:text-orange ">
-          <NavLink
             to="/aboutUs"
             className={({ isActive, isPending }) =>
               isPending
@@ -126,7 +140,7 @@ function Header() {
           >
             About Us
           </NavLink>
-        </li>
+        </li>{" "}
         <li className="block hover:text-orange ">
           <NavLink
             to="/team"
@@ -138,12 +152,12 @@ function Header() {
                 : "hover:text-orange "
             }
           >
-          Team
+            Team
           </NavLink>
         </li>
         <li className="block hover:text-orange ">
           <NavLink
-            to="/aboutUs"
+            to="/faq"
             className={({ isActive, isPending }) =>
               isPending
                 ? "flex items-center hover:text-orange text-orange"
@@ -152,7 +166,7 @@ function Header() {
                 : "hover:text-orange "
             }
           >
-            About Us
+            FAQ
           </NavLink>
         </li>
       </ul>

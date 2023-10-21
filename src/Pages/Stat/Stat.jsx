@@ -2,7 +2,12 @@ import React from "react";
 function Stat() {
   return (
     <>
-      <div class="mx-auto container my-20 lg:mt-48 lg:mb-24">
+      <div
+        class="mx-auto container my-20 lg:mt-48 lg:mb-24"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           <div class="flex justify-center w-full lg:border-r border-gray-300 py-6">
             <svg
