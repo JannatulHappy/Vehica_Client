@@ -77,16 +77,18 @@ function Login() {
             />
           </div>
           <div className="mt-6 form-control">
-            <button className="text-white bg-black btn">Login</button>
+            <button className="py-3 text-lg font-bold text-white bg-orange ">
+              Login
+            </button>
           </div>
         </form>
         <button
-          className="text-white bg-black btn"
+          className="py-3 text-lg font-bold text-white rounded bg-orange"
           onClick={handleGoogleSignIn}
         >
           Google Sign In
         </button>
-        <p className="my-5 font-semibold text-center ">
+        <p className="my-5 font-semibold text-center text-orange">
           Don't have an account?
           <Link
             to="/register"

@@ -49,7 +49,7 @@ const Brands = ({ products }) => {
     >
       <h2 className="text-2xl font-medium my-7 text-orange">Handy picked</h2>
       <h1 className="mb-20 text-5xl font-extrabold">Brand We Worked With</h1>
-      <div className="grid gap-6 pt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 brand-cards-container">
+      <div className="grid gap-6 pt-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 brand-cards-container">
         {" "}
         {brandCards}
       </div>
