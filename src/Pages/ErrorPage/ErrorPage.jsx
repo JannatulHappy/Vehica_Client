@@ -3,28 +3,36 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <section class="bg-white  flex items-center justify-center">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center">
-          <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 ">
-            404
-          </h1>
-          <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl ">
-            Something's missing.
-          </p>
-          <p class="mb-4 text-lg font-light text-gray-500 ">
-            Sorry, we can't find that page. You'll find lots to explore on the
-            home page.{" "}
-          </p>
-          <Link
-            to="/"
-            class="inline-flex bg-black font-medium rounded-lg text-lg px-5 py-2.5 text-center text-white  my-4"
-          >
-            Back to Homepage
-          </Link>
+    <div className="">
+      <div className="flex items-center justify-center py-12">
+        <div className="flex items-center justify-center mx-4 border rounded-md md:w-2/3 ">
+          <div className="flex flex-col items-center py-16 ">
+            <img
+              className="hidden px-4 md:block"
+              src="https://i.ibb.co/9Vs73RF/undraw-page-not-found-su7k-1-3.png"
+              alt=""
+            />
+            <img
+              className="md:hidden"
+              src="https://i.ibb.co/RgYQvV7/undraw-page-not-found-su7k-1.png"
+              alt=""
+            />
+            <h1 className="px-4 pt-8 pb-4 text-5xl font-bold leading-10 text-center text-gray-800">
+              OOPS!{" "}
+            </h1>
+            <p className="px-4 pb-10 text-base leading-none text-center text-gray-600">
+              No signal here! we cannot find the page you are looking for{" "}
+            </p>
+            <Link to="/">
+              <button className="h-10 mx-4 text-base text-white bg-indigo-700 border rounded-md w-44 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-indigo-800">
+                {" "}
+                Go Back
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

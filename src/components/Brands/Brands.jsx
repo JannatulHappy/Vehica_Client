@@ -18,7 +18,7 @@ const Brands = ({ products }) => {
           <Link
             to={`/api/products/${product.brandName}`}
             key={product._id}
-            className=" brand-card"
+            className=" rounded-box bg-black02 brand-card"
             onClick={handleBrand}
           >
             <img
@@ -26,7 +26,12 @@ const Brands = ({ products }) => {
               src={product.brand_Img}
               alt={product.brandName}
             />
-            <p className="my-3 ml-3 text-2xl font-semibold">{product.brandName}</p>
+            <div className="flex items-center justify-between px-4 mt-4">
+              <p className="text-xl font-semibold ">
+                {product.brandName}
+              </p>
+              <p className="px-3 py-1 font-medium rounded-lg bg-orange">2022</p>
+            </div>
           </Link>
         );
 
@@ -38,9 +43,9 @@ const Brands = ({ products }) => {
     <div className="max-w-[1440px] px-5 mx-auto my-20">
       <h2 className="text-2xl font-medium my-7 text-orange">Handy picked</h2>
       <h1 className="mb-20 text-5xl font-extrabold text-white ">
-        Featured Listings
+        Brand We Worked With
       </h1>
-      <div className="grid pt-10 sm:grid-cols-2 md:gap-10 md:grid-cols-3 lg:grid-cols-6 brand-cards-container">
+      <div className="grid gap-6 pt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 brand-cards-container">
         {" "}
         {brandCards}
       </div>

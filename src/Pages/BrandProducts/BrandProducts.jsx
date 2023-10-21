@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import carousel01 from "../../assets/carousel_1.jpg";
 import carousel03 from "../../assets/carousel_3.jpg";
 import carousel04 from "../../assets/carousel_4.jpg";
-import carousel05 from "../../assets/carousel_5.jpg";
+
 
 const BrandProducts = () => {
   const productsData = useLoaderData();
@@ -32,9 +32,9 @@ const BrandProducts = () => {
             <div className="w-3/5 carousel-item">
               <img src={carousel04} className="w-full" alt="Carousel Image 3" />
             </div>
-            <div className="w-3/5 carousel-item">
+            {/* <div className="w-3/5 carousel-item">
               <img src={carousel05} className="w-full" alt="Carousel Image 4" />
-            </div>
+            </div> */}
           </div>
           <div className="my-20 grid grid-cols-1 gap-4 mx-auto sm:grid-cols-2 md:grid-cols-3 max-w-[1440px]">
             {productsData?.map((product, index) => (

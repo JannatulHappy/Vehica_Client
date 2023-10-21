@@ -24,15 +24,18 @@ const ProductDetail = () => {
   const addToCart = async () => {
     try {
       const cartData = {
-        productData: singleProductsData,
-        user: {
-          email: user.email,
-          name: user.displayName,
-          uid:user.uid
-        },
-       
+        name,
+        image,
+        brandName,
+        brand_Img,
+        priceInDollars,
+        rating,
+        type,
+        email: user.email,
+        userName: user.displayName,
+        uid: user.uid,
       };
- console.log(cartData,"cart");
+      console.log(cartData, "cart");
       const response = await fetch("http://localhost:5005/api/product/myCart", {
         method: "POST",
         headers: {
@@ -59,7 +62,9 @@ const ProductDetail = () => {
           <img src={image} alt={name} className="w-full h-auto rounded-lg" />
         </div>
         <div className="w-full p-4 md:w-1/2">
-          <h2 className="mb-2 text-3xl font-bold text-gray-800 "><img className="w-16 rounded" src={brand_Img} alt="" /> {name}</h2>
+          <h2 className="mb-2 text-3xl font-bold text-gray-800 ">
+            <img className="w-16 rounded" src={brand_Img} alt="" /> {name}
+          </h2>
           <div className="text-xl font-semibold text-orange">
             {brandName} - {type} - {rating}
           </div>

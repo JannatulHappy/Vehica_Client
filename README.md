@@ -4,7 +4,7 @@ This MERN Stack web project aims to build a brand-based e-commerce website with 
 
 ## Website Theme **Automotive**
 
-[Live Link to the Website](https://vehica-5c943.web.app/)
+[Vehica](https://vehica-5c943.web.app/)
 
 1. **Add Product Page**: Create an "Add Product" page with a form for users to add products. The form should include fields for Image, Name, Brand Name, Type, Price, Short Description, Rating, and an "Add" button. This is a protected route.
 

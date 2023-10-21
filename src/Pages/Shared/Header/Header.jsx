@@ -65,7 +65,6 @@ function Header() {
             Route3
           </NavLink>
         </li>
-        
       </ul>
     </>
   );
@@ -102,19 +101,18 @@ function Header() {
         </li>
         <li className="block hover:text-orange ">
           <NavLink
-            to="/Route3"
+            to="/faq"
             className={({ isActive, isPending }) =>
               isPending
-                ? "flex items-center "
+                ? "flex items-center hover:text-orange text-orange"
                 : isActive
-                ? "text-orange   flex items-center border-b-2  rounded-none border-orange"
-                : ""
+                ? "text-orange   flex items-center border-b-2  rounded-none border-orange hover:text-orange"
+                : "hover:text-orange text-orange"
             }
           >
-           Route3
+            FAQ
           </NavLink>
         </li>
-       
       </ul>
     </>
   );
@@ -158,7 +156,7 @@ function Header() {
             ) : (
               <NavLink
                 to="/register"
-                className="px-1 mx-3 sm:mx-5 sm:px-4 sm:mx-1 btn"
+                className="px-1 mx-3 sm:mx-5 sm:px-4 npm btn"
               >
                 Sign up
               </NavLink>
@@ -195,7 +193,8 @@ function Header() {
 
                         <div className="card-actions">
                           <Link
-                            to={`/api/products/myCart`}
+                            to={`/api/products/myCart
+                            `}
                             className="btn btn-primary btn-block"
                           >
                             View cart
@@ -240,10 +239,7 @@ function Header() {
               // <button onClick={handleSignOut} className="btn">
               //   Sign Out
               // </button>
-              <NavLink
-                to="/login"
-                className="px-1 sm:px-4 btn"
-              >
+              <NavLink to="/login" className="px-1 sm:px-4 btn">
                 Sign in
               </NavLink>
             )}
