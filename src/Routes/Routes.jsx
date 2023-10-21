@@ -11,6 +11,8 @@ import BrandProducts from "../Pages/BrandProducts/BrandProducts";
 import ProductDetail from "../Pages/ProductDetail/ProductDetail";
 import UpdateProduct from "../Pages/UpdateProduct/UpdateProduct";
 import Faq from "../Pages/Faq/Faq";
+import Team from "../Pages/Team/Team";
+import AboutUs from "../Pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +74,15 @@ const router = createBrowserRouter([
           fetch(`http://localhost:5005/api/products/${params.brandName}`),
       },
       
+      {
+        path: "/aboutUs",
+        element: <AboutUs />,
+      },
+      {
+        path: "/team",
+        element: <Team />,
+      },
+     
       {
         path: "/faq",
         element: <Faq />,

@@ -2,7 +2,7 @@ import React from "react";
 function IndexPage() {
   return (
     <>
-      <div className="px-4 md:mx-auto md:container">
+      <div className="px-4 md:mx-auto max-w-[1440px] mx-auto">
         <div className="pt-10 md:pt-40">
           <div className="container mx-auto">
             <div className="flex flex-wrap items-center pb-12">
@@ -32,7 +32,7 @@ function IndexPage() {
                       >
                         <path
                           d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
-                          fill="#D53F8C"
+                          fill="#ff4605"
                         />
                       </svg>
                     </div>
@@ -145,7 +145,7 @@ function IndexPage() {
                       >
                         <path
                           d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
-                          fill="#D53F8C"
+                          fill="#ff4605"
                         />
                       </svg>
                     </div>
@@ -209,7 +209,7 @@ function IndexPage() {
                       2,354 USD
                     </p>
                   </div>
-                  <button className="relative py-2 pl-3 pr-10 mt-4 text-xs tracking-normal text-white bg-indigo-700 cursor-pointer focus:outline-none hover:opacity-90">
+                  <button className="relative py-2 pl-3 pr-10 mt-4 text-xs tracking-normal text-white cursor-pointer bg-orange focus:outline-none hover:opacity-90">
                     View Invoice
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

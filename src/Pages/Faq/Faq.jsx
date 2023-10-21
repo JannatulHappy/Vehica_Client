@@ -270,7 +270,7 @@ function Faq() {
               </a>
             </div>
           </div>
-          <div className="mt-9 md:mt-11 lg:mt-16">
+          <div className="my-20 md:mt-11 lg:mt-16">
             <div className="text-center">
               <h1 className="text-3xl font-medium leading-loose ">
                 Didn’t find an answer?
