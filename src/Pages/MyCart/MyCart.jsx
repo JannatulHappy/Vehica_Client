@@ -3,21 +3,19 @@ import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 
 const MyCart = () => {
-  const { user,loading ,setLoading} = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
   const [cartData, setCartData] = useState([]);
 
   useEffect(() => {
-    setLoading(true)
     fetch(`https://vehica-server.vercel.app/api/products/cart/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setCartData(data);
-        setLoading(false);
       });
   }, [user.email]);
- if (loading) {
-   return <span className="loading loading-infinity loading-lg"></span>;
- }
+  if (loading) {
+    return <span className="loading loading-infinity loading-lg"></span>;
+  }
   const handleRemoveFromCart = (id) => {
     fetch(`https://vehica-server.vercel.app/api/products/cart/${id}`, {
       method: "DELETE",
@@ -36,16 +34,17 @@ const MyCart = () => {
         })
       );
   };
-  
+
   return (
     <div className="mx-auto mt-8 max-w-[1440px]">
-      {cartData.length === 0 ? (
+      {cartData.length === 0 && (
         <div className="flex items-center justify-center h-screen ">
           <h2 className="text-3xl font-bold ">
             You have not added any product in your Cart!
           </h2>
         </div>
-      ) : (
+      )}
+      {cartData && (
         <div className="grid grid-cols-1 gap-4 my-40 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {cartData.map((item) => (
             <div key={item._id} className="p-4 border rounded-md shadow-md">
@@ -68,7 +67,7 @@ const MyCart = () => {
             </div>
           ))}
         </div>
-      )}
+      )}{" "}
     </div>
   );
 };

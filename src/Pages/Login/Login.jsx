@@ -50,7 +50,7 @@ function Login() {
         <h1 className="text-4xl font-bold">Please Login</h1>
       </div>
 
-      <div className="flex-shrink-0 w-full p-6 mx-auto text-black shadow-2xl lg:w-1/3 md:w-2/4 card bg-base-100">
+      <div className="flex-shrink-0 w-full p-6 mx-auto text-white shadow-2xl xl:w-1/3 md:w-3/4 card bg-base-100">
         <form className="card-body" onSubmit={handleLogin}>
           <div className="form-control">
             <label className="label">
