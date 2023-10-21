@@ -38,7 +38,7 @@ const ProductDetail = () => {
       };
       console.log(cartData, "cart");
       const response = await fetch(
-        "https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/product/myCart",
+        "https://vehica-server.vercel.app/api/product/myCart",
         {
           method: "POST",
           headers: {

@@ -140,7 +140,7 @@ const Footer = () => {
           © 1968 Company Co. All rights reserved.
         </div>
       </footer>
-      ;
+      
     </div>
   );
 };

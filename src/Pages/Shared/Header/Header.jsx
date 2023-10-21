@@ -4,26 +4,20 @@ import { AuthContext } from "../../../providers/AuthProvider";
 
 function Header() {
   const { user, logOut } = useContext(AuthContext);
-  // use theme from local storage if available or set light theme
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  );
-  // update state on toggle
-  const handleToggle = (e) => {
-    if (e.target.checked) {
-      setTheme("black");
-    } else {
-      setTheme("light");
-    }
+  // Check if there's a theme in local storage, default to "light" if not
+  const storedTheme = localStorage.getItem("theme");
+  const [theme, setTheme] = useState(storedTheme || "black");
+
+  // Function to toggle the theme
+  const handleToggle = () => {
+    const newTheme = theme === "light" ? "black" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
-  // Set theme state in local storage on mount and update local storage on state change
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-    const localTheme = localStorage.getItem("theme");
-
-    // Add a custom data-theme attribute to the html tag required to update the theme using DaisyUI
-    document.querySelector("html").setAttribute("data-theme", localTheme);
+    // Set the theme attribute on the HTML tag
+    document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
   const handleSignOut = () => {
     logOut()

@@ -29,7 +29,7 @@ const AddProductForm = () => {
     // Send the product data to the Express.js backend here
 
     try {
-      const res = await fetch("http://localhost:5005/api/products", {
+      const res = await fetch("https://vehica-server.vercel.app/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

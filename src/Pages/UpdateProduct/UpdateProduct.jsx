@@ -28,7 +28,7 @@ const UpdateProduct = () => {
     };
 
     fetch(
-      `https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/update/${singleData._id}`,
+      `https://vehica-server.vercel.app/api/products/update/${singleData._id}`,
       {
         method: "PUT",
         headers: {

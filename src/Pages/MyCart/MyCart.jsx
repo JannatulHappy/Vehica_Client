@@ -8,25 +8,20 @@ const MyCart = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetch(
-      `https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/cart/${user.email}`
-    )
+    fetch(`https://vehica-server.vercel.app/api/products/cart/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
-        setCartData(data)
-        setLoading(false)
+        setCartData(data);
+        setLoading(false);
       });
   }, [user.email]);
  if (loading) {
    return <span className="loading loading-infinity loading-lg"></span>;
  }
   const handleRemoveFromCart = (id) => {
-    fetch(
-      `https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/cart/${id}`,
-      {
-        method: "DELETE",
-      }
-    )
+    fetch(`https://vehica-server.vercel.app/api/products/cart/${id}`, {
+      method: "DELETE",
+    })
       .then((res) => {
         if (res.status === 200) {
           Swal.fire("Deleted Successfully!", "", "success");
@@ -41,8 +36,7 @@ const MyCart = () => {
         })
       );
   };
-  if (cartData === 0) {
-  }
+  
   return (
     <div className="mx-auto mt-8 max-w-[1440px]">
       {cartData.length === 0 ? (
