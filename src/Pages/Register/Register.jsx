@@ -137,7 +137,7 @@ function Register() {
 
       <p className="my-5 font-semibold text-center">
         Already have an account?
-        <Link to="/login" className="text-black underline hover:underline">
+        <Link to="/login" className="underline text-orange hover:underline">
           {" "}
           Please Login
         </Link>

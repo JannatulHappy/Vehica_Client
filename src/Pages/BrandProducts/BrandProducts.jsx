@@ -40,7 +40,7 @@ const BrandProducts = () => {
             {productsData?.map((product, index) => (
               <div
                 key={product._id}
-                className="overflow-hidden rounded-lg shadow-lg bg-black02"
+                className="overflow-hidden rounded-lg shadow-lg bg-black03"
               >
                 <img
                   src={product.image}
@@ -49,29 +49,30 @@ const BrandProducts = () => {
                 />
                 <div className="px-6 py-4">
                   <div className="mb-2 text-xl font-bold">{product.name}</div>
-                  <p className="text-base text-gray-700">
+                  <p className="text-base text-gray-400">
                     <strong>Brand Name:</strong> {product.brandName}
                   </p>
-                  <p className="text-base text-gray-700">
+                  <p className="text-base text-gray-400">
                     <strong>Type:</strong> {product.type}
                   </p>
-                  <p className="text-base text-gray-700">
+                  <p className="text-base text-gray-400">
                     <strong>Price:</strong> ${product.priceInDollars}
                   </p>
-                  <p className="text-base text-gray-700">
+
+                  <p className="text-base text-gray-400">
                     <strong>Rating:</strong> {product.rating}
                   </p>
                 </div>
-                <div className="px-6 py-4">
+                <div className="flex justify-between px-6 py-4">
                   <Link
                     to={`/api/singleProduct/${product._id}`}
-                    className="px-4 py-2 mr-2 font-bold text-white bg-black rounded-full hover:bg-blue-700"
+                    className="px-6 py-3 mr-2 font-semibold text-white bg-black rounded-lg hover:bg-orange"
                   >
                     Details
                   </Link>
                   <Link
                     to={`/api/products/update/${product._id}`}
-                    className="px-4 py-2 font-bold text-white bg-black rounded-full hover:bg-green-700"
+                    className="px-6 py-3 mr-2 font-semibold text-white bg-black rounded-lg hover:bg-orange"
                   >
                     Update
                   </Link>

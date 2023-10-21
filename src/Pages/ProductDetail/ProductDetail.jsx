@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const ProductDetail = () => {
   const { user } = useContext(AuthContext);
@@ -45,13 +46,24 @@ const ProductDetail = () => {
       });
 
       if (response.ok) {
-        setCartMessage("Product added to cart!");
+      
+        Swal.fire(
+          "Product Added Successfully!",
+          "Visit Product Cart!",
+
+          "success"
+        );
       } else {
-        setCartMessage("Failed to add the product to the cart.");
+      
+       
       }
     } catch (error) {
-      setCartMessage("Failed to add the product to the cart.");
-      console.error("Error adding the product to the cart:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Failed to add the product to the cart.",
+        text: error,
+      });
+     
     }
   };
 

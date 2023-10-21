@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const UpdateProduct = () => {
     const singleData = useLoaderData();
@@ -36,14 +37,20 @@ const UpdateProduct = () => {
       .then((res) => res.json())
       .then((data) => {
           if (data.acknowledged) {
-              alert("updated successfully!!!")
+             Swal.fire("Good job!", "Product Added Successfully!", "success");
               
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "Failed to Update the product.",
+              text: error,
+            });
         }
       });
   };
 
   return (
-    <div className="w-2/5 mx-auto my-20">
+    <div className="px-5 pb-20 mx-auto my-20 md:w-2/5">
       <h1 className="mb-4 text-4xl font-bold text-center">Update Product</h1>
       <form onSubmit={handleUpdate}>
         <div className="mb-4">
@@ -127,7 +134,7 @@ const UpdateProduct = () => {
         <div className="text-center">
           <button
             type="submit"
-            className="px-4 py-2 text-white rounded-lg bg-orange hover:bg-blue-700"
+            className="px-8 py-3 text-lg font-medium text-white rounded-lg bg-orange hover:bg-blue-700"
           >
             Update
           </button>

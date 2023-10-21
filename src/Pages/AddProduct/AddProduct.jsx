@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const AddProductForm = () => {
   const initialProduct = {
@@ -38,11 +39,20 @@ const AddProductForm = () => {
       const data = await res.json();
       // console.log(data);
       if (data.acknowledged) {
-        alert("Data posted successfully");
+       Swal.fire(
+         "Product Added Successfully!",
+         "Visit Product Cart!",
+
+         "success"
+       );
         setProduct(initialProduct);
       }
     } catch (error) {
-      console.log(error);
+       Swal.fire({
+         icon: "error",
+         title: "Failed to add the product.",
+         text: error,
+       });
     }
   };
   // You can send the 'product' state to your Express.js backend here.
@@ -64,6 +74,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Product Name"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -78,6 +89,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Brand Name"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -92,6 +104,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Brand Image URL"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -106,6 +119,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Product Type"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -120,6 +134,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Product Price"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -134,6 +149,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Product Image URL"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -151,6 +167,7 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Short Description"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="mb-4">
@@ -168,6 +185,7 @@ const AddProductForm = () => {
             placeholder="Long Description"
             className="w-full px-3 py-2 text-black border rounded-lg"
             rows="4"
+            required
           />
         </div>
         <div className="mb-4">
@@ -182,12 +200,14 @@ const AddProductForm = () => {
             onChange={handleChange}
             placeholder="Product Rating"
             className="w-full px-3 py-2 text-black border rounded-lg"
+            required
           />
         </div>
         <div className="text-center">
           <button
             type="submit"
             className="px-8 py-4 text-lg font-semibold text-white transition-colors rounded-lg hover:bg-white hover:text-black bg-orange"
+            
           >
             Add Product
           </button>
