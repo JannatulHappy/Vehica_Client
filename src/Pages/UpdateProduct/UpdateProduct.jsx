@@ -27,24 +27,26 @@ const UpdateProduct = () => {
       image,
     };
 
-    fetch(`http://localhost:5005/api/products/update/${singleData._id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updateData),
-    })
+    fetch(
+      `https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/update/${singleData._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updateData),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
-          if (data.acknowledged) {
-             Swal.fire("Good job!", "Product Added Successfully!", "success");
-              
-          } else {
-            Swal.fire({
-              icon: "error",
-              title: "Failed to Update the product.",
-              text: error,
-            });
+        if (data.acknowledged) {
+          Swal.fire("Good job!", "Product Added Successfully!", "success");
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Failed to Update the product.",
+            text: error,
+          });
         }
       });
   };

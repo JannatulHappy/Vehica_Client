@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Brands from '../../components/Brands/Brands';
 import Banner from '../../components/Banner/Banner';
@@ -9,6 +9,7 @@ import NewsLetter from "../../components/NewsLetter/NewsLetter"
 
 const Home = () => {
     const products = useLoaderData();
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
    
     return (
         <div>

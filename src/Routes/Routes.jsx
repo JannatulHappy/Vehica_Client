@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch(`http://localhost:5005/api/products`),
+        loader: () => fetch(`https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products`),
       },
       {
         path: "/addProduct",
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5005/api/singleProduct/${params.id}`),
+          fetch(`https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/singleProduct/${params.id}`),
       },
 
       {
@@ -65,13 +65,13 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5005/api/singleProduct/${params.id}`),
+          fetch(`https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/singleProduct/${params.id}`),
       },
       {
         path: "/api/products/:brandName",
         element: <BrandProducts />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5005/api/products/${params.brandName}`),
+          fetch(`https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/${params.brandName}`),
       },
       
       {

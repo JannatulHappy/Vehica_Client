@@ -90,7 +90,7 @@ function Login() {
           Don't have an account?
           <Link
             to="/register"
-            className="text-black underline hover:underline"
+            className="underline text-orange hover:underline"
           >
             {" "}
             Please Register
