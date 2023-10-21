@@ -18,7 +18,7 @@ const Brands = ({ products }) => {
           <Link
             to={`/api/products/${product.brandName}`}
             key={product._id}
-            className=" rounded-box bg-black02 brand-card transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
+            className="rounded-box bg-black02 brand-card transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -29,7 +29,7 @@ const Brands = ({ products }) => {
               src={product.brand_Img}
               alt={product.brandName}
             />
-            <div className="flex items-center justify-between px-4 mt-4">
+            <div className="flex items-center justify-between px-4 py-3 text-white">
               <p className="text-xl font-semibold ">{product.brandName}</p>
               <p className="px-3 py-1 font-medium rounded-lg bg-orange">2022</p>
             </div>
@@ -42,15 +42,13 @@ const Brands = ({ products }) => {
 
   return (
     <div
-      className="max-w-[1440px] px-5 mx-auto my-20"
+      className="max-w-[1440px] px-5 mx-auto my-20 text-color"
       data-aos="fade-right"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
     >
       <h2 className="text-2xl font-medium my-7 text-orange">Handy picked</h2>
-      <h1 className="mb-20 text-5xl font-extrabold text-white ">
-        Brand We Worked With
-      </h1>
+      <h1 className="mb-20 text-5xl font-extrabold">Brand We Worked With</h1>
       <div className="grid gap-6 pt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 brand-cards-container">
         {" "}
         {brandCards}

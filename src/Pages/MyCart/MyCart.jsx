@@ -3,35 +3,43 @@ import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 
 const MyCart = () => {
-  const { user } = useContext(AuthContext);
+  const { user,loading ,setLoading} = useContext(AuthContext);
   const [cartData, setCartData] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5005/api/products/cart/${user.email}`)
+    setLoading(true)
+    fetch(
+      `https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/cart/${user.email}`
+    )
       .then((res) => res.json())
-      .then((data) => setCartData(data));
+      .then((data) => {
+        setCartData(data)
+        setLoading(false)
+      });
   }, [user.email]);
-
+ if (loading) {
+   return <span className="loading loading-infinity loading-lg"></span>;
+ }
   const handleRemoveFromCart = (id) => {
-    fetch(`http://localhost:5005/api/products/cart/${id}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/products/cart/${id}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((res) => {
         if (res.status === 200) {
-          Swal.fire(
-           
-            "Deleted Successfully!",
-            "",
-            "success"
-          );
+          Swal.fire("Deleted Successfully!", "", "success");
           setCartData((prevData) => prevData.filter((item) => item._id !== id));
         }
       })
-      .catch((error) =>  Swal.fire({
-              icon: "error",
-              title: "Failed to add the product to the cart.",
-              text: error,
-            }));
+      .catch((error) =>
+        Swal.fire({
+          icon: "error",
+          title: "Failed to add the product to the cart.",
+          text: error,
+        })
+      );
   };
   if (cartData === 0) {
   }

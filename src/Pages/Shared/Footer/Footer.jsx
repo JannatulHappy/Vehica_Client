@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <footer
-        className="px-4 mt-16 bg-black divide-y dark:text-gray-100"
+        className="px-4 mt-16 divide-y text-color "
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
             <div className="space-y-3">
-              <h3 className="uppercase tracki dark:text-gray-50">Product</h3>
+              <h3 className="uppercase dark:text-gray-50">Product</h3>
               <ul className="space-y-1">
                 <li>
                   <a rel="noopener noreferrer" href="#">

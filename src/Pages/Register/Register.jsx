@@ -44,6 +44,7 @@ function Register() {
         // navigate after login
         //  Navigate(location?.state ? location.state : "/");
         updateProfile(result.user, {
+         
           displayName: name,
           photoURL: photo,
         })

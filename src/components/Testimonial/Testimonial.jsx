@@ -16,7 +16,7 @@ export default function Testimonial() {
         </h1>
         <div className="container grid gap-6 px-10 py-20 mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20">
           <div>
-            <div className="relative flex flex-col items-center w-full p-6 bg-white shadow-md cursor-pointer group hover:bg-indigo-700 md:p-12">
+            <div className="relative flex flex-col items-center w-full p-6 bg-white shadow-md cursor-pointer group hover:bg-orange md:p-12">
               <div className="flex flex-col items-center text-gray-600 group-hover:text-white">
                 <svg
                   width={26}
@@ -52,7 +52,7 @@ export default function Testimonial() {
                   recommending you to everyone
                 </p>
               </div>
-              <div className="absolute bottom-0 -mb-6 text-white group-hover:text-indigo-700">
+              <div className="absolute bottom-0 -mb-6 text-white group-hover:text-orange">
                 <svg
                   width={34}
                   height={28}
@@ -141,7 +141,7 @@ export default function Testimonial() {
             </div>
           </div>
           <div>
-            <div className="relative flex flex-col items-center w-full p-6 bg-white shadow-md cursor-pointer group hover:bg-indigo-700 md:p-12">
+            <div className="relative flex flex-col items-center w-full p-6 bg-white shadow-md cursor-pointer group hover:bg-orange md:p-12">
               <div className="flex flex-col items-center text-gray-600 group-hover:text-white">
                 <svg
                   width={26}
@@ -177,7 +177,7 @@ export default function Testimonial() {
                   recommending you to everyone
                 </p>
               </div>
-              <div className="absolute bottom-0 -mb-6 text-white group-hover:text-indigo-700">
+              <div className="absolute bottom-0 -mb-6 text-white group-hover:text-orange">
                 <svg
                   width={34}
                   height={28}
@@ -266,7 +266,7 @@ export default function Testimonial() {
             </div>
           </div>
           <div>
-            <div className="relative flex flex-col items-center w-full p-6 bg-white shadow-md cursor-pointer group hover:bg-indigo-700 md:p-12">
+            <div className="relative flex flex-col items-center w-full p-6 bg-white shadow-md cursor-pointer group hover:bg-orange md:p-12">
               <div className="flex flex-col items-center text-gray-600 group-hover:text-white">
                 <svg
                   width={26}
@@ -302,7 +302,7 @@ export default function Testimonial() {
                   recommending you to everyone
                 </p>
               </div>
-              <div className="absolute bottom-0 -mb-6 text-white group-hover:text-indigo-700">
+              <div className="absolute bottom-0 -mb-6 text-white group-hover:text-orange">
                 <svg
                   width={34}
                   height={28}

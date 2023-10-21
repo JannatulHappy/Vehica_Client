@@ -37,13 +37,16 @@ const ProductDetail = () => {
         uid: user.uid,
       };
       console.log(cartData, "cart");
-      const response = await fetch("http://localhost:5005/api/product/myCart", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(cartData),
-      });
+      const response = await fetch(
+        "https://vehica-server-1ssk5rnln-jannatulhappys-projects.vercel.app/api/product/myCart",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(cartData),
+        }
+      );
 
       if (response.ok) {
       

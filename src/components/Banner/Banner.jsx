@@ -28,11 +28,13 @@ const Banner = () => {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <h4 className="text-lg font-bold">Biggest Car Dealer</h4>
-                <h1 className="pl-8 mt-5 text-4xl font-extrabold tracking-wide border-l-8 lg:text-7xl md:text-5xl border-orange">
+                <h4 className="text-lg font-bold text-white">
+                  Biggest Car Dealer
+                </h4>
+                <h1 className="pl-8 mt-5 text-4xl font-extrabold tracking-wide text-white border-l-8 lg:text-7xl md:text-5xl border-orange">
                   Find Your <span className="text-orange"> Perfect</span> Car
                 </h1>
-                <p className="mt-8 text-lg">
+                <p className="mt-8 text-lg text-white">
                   We can help you find the best car. Check our reviews, compare
                   models, and find cars for sale.
                 </p>
@@ -49,7 +51,9 @@ const Banner = () => {
                         alt={category}
                       />
                     </div>
-                    <p className="pt-10 text-lg font-medium">{category}</p>
+                    <p className="pt-10 text-lg font-medium text-white">
+                      {category}
+                    </p>
                   </div>
                 ))}
               </div>
