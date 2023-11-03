@@ -297,7 +297,7 @@ function Header() {
                     <li>
                       {" "}
                       <button onClick={handleSignOut}>
-                        <a className="btn bg-orange">Logout</a>
+                        <a className="py-2 text-lg font-medium rounded-lg px-7 bg-orange">Logout</a>
                       </button>
                     </li>
                   </ul>

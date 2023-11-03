@@ -21,8 +21,8 @@ function Login() {
       .then((result) => {
         console.log("login");
         Swal.fire("Good job!", "Login Successfully!", "success");
-        // navigate after login
-        navigate(location?.state ? location.state : "/");
+        // // navigate after login
+        navigate(location?.state ? location?.state : "/");
       })
       .catch((error) => {
         console.error(error);

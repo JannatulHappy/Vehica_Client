@@ -3,11 +3,9 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
-import { updateProfile } from "firebase/auth";
-// import { updateProfile } from "firebase/auth";
 
 function Register() {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, user, setUser, updateUser } = useContext(AuthContext);
   const [registerError, setRegisterError] = useState("");
 
   const handleRegister = (e) => {
@@ -38,18 +36,18 @@ function Register() {
     }
     // create user
     createUser(email, password)
-      .then((result) => {
+      .then((res) => {
         e.target.reset();
         Swal.fire("Good job!", "User Created Successfully!", "success");
-        // navigate after login
-        //  Navigate(location?.state ? location.state : "/");
-        updateProfile(result.user, {
-         
+
+        updateUser({
           displayName: name,
           photoURL: photo,
-        })
-          .then(() => console.log("profile upd", name))
-          .catch();
+        }).then((res) => {
+          setUser({ ...res.user, displayName: name, photoURL: photo });
+          goTo(`${location.state ? location.state : "/"}`);
+          console.log(res.data);
+        });
       })
       .catch((error) => {
         Swal.fire({

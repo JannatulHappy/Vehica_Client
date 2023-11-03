@@ -1,76 +1,70 @@
-import { createContext, useEffect, useState } from "react";
+import React, { useState } from "react";
+import { createContext } from "react";
+import app from "../firebase/firebase.config";
 import {
-  createUserWithEmailAndPassword,
   getAuth,
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  signOut,
   GoogleAuthProvider,
   signInWithPopup,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
   updateProfile,
+  deleteUser,
 } from "firebase/auth";
-import app from "../firebase/firebase.config";
+import { useEffect } from "react";
 
-export const AuthContext = createContext(null);
-const provider = new GoogleAuthProvider();
-
-const auth = getAuth(app);
+export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const auth = getAuth(app);
+  const [user, setUser] = useState({});
   const [loading, setLoading] = useState(true);
 
   const createUser = (email, password) => {
-    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
-  };
-  const googleSignIn = () => {
-    setLoading(true);
-    return signInWithPopup(auth, provider)
   };
 
   const signIn = (email, password) => {
-    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const logOut = async () => {
-     setLoading(true);
-    try {
-      await signOut(auth);
-      setUser(null);
-    } catch (error) {
-      console.error("Error signing out:", error);
-    }
+  const googleProvider = new GoogleAuthProvider();
+
+  const googleSignIn = () => {
+    return signInWithPopup(auth, googleProvider);
+  };
+
+  const updateUser = (userInfo) => {
+    return updateProfile(auth.currentUser, userInfo);
+  };
+
+ 
+
+  const logOut = () => {
+    return signOut(auth);
   };
 
   useEffect(() => {
-    setLoading(true)
-    const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-       
-        setUser(currentUser);
-
-        setLoading(false);
-        // ...
-      } else {
-        // User is signed out
-        // ...
-      }
+    const unscubscribe = onAuthStateChanged(auth, (currentUser) => {
+      fetch("/user/email");
+      setUser(currentUser);
+      setLoading(false);
     });
     return () => {
-      unSubscribe();
+      unscubscribe();
     };
   }, []);
-  // console.log(user, "user paici");
+
   const authInfo = {
     user,
     loading,
-    setLoading,
     createUser,
-    googleSignIn,
     signIn,
+    setUser,
     logOut,
+    googleSignIn,
+    updateUser
   };
 
   return (

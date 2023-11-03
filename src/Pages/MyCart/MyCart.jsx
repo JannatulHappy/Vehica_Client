@@ -3,19 +3,20 @@ import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 
 const MyCart = () => {
-  const { user, loading } = useContext(AuthContext);
+  const { user,setLoading } = useContext(AuthContext);
   const [cartData, setCartData] = useState([]);
 
   useEffect(() => {
+    
     fetch(`https://vehica-server.vercel.app/api/products/cart/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
+      
         setCartData(data);
+       
       });
   }, [user.email]);
-  if (loading) {
-    return <span className="loading loading-infinity loading-lg"></span>;
-  }
+  
   const handleRemoveFromCart = (id) => {
     fetch(`https://vehica-server.vercel.app/api/products/cart/${id}`, {
       method: "DELETE",
