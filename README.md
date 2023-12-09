@@ -19,3 +19,5 @@ This MERN Stack web project aims to build a brand-based e-commerce website with 
 6. **Navbar User Menu**: Once logged in, display the user's name, profile picture, and a logout button in the navbar. Clicking on the logout button should log the user out.
 
 7. **My Cart Page**: Create a "My Cart" page where users can view and delete their added products. This is a protected route.
+## Technology:
+Tailwind, React, Firebase, Express JS, MongoDB, Vercel
